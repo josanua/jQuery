@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Demo</title>
+	<style>
+		.test{
+			font-weight: bold
+		}
+	</style>
+</head>
+<body>
+	<a href="http://jquery.com/">jQuery</a>
+	<script src="jquery310.js"></script>
+	
+	<script>
+		$( document ).ready(function(){
+			
+			$('a').click(function(event){
+				event.preventDefault();
+				$(this).hide('slow');
+			});
+
+		});
+	</script>
+	
+</body>
+</html>
